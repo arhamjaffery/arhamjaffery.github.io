@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Arham Jaffery</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f4f8; color: #2d3748; }
+
+        header {
+            background: linear-gradient(135deg, #1b2a4a 0%, #2c3e6b 100%);
+            color: white;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        header h1 { font-size: 22px; letter-spacing: 1.5px; font-weight: 700; }
+        nav a {
+            color: #c8d6f0;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #4fc3f7; }
+
+        .page-title {
+            background: linear-gradient(160deg, #1b2a4a 0%, #243460 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .page-title h2 { font-size: 34px; margin-bottom: 10px; font-weight: 700; }
+        .page-title p { color: #8aaac8; font-size: 15px; }
+
+        .content {
+            max-width: 950px;
+            margin: 45px auto;
+            padding: 0 20px 55px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .info-card {
+            background-color: white;
+            border-top: 4px solid #4fc3f7;
+            border-radius: 8px;
+            padding: 22px 26px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+        }
+        .info-card h4 {
+            color: #1b2a4a;
+            font-size: 13px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+        }
+        .info-card p, .info-card a {
+            font-size: 15px;
+            color: #4a5a6e;
+            text-decoration: none;
+        }
+        .info-card a:hover { color: #4fc3f7; }
+
+        .social-links {
+            background-color: white;
+            border-top: 4px solid #2c3e6b;
+            border-radius: 8px;
+            padding: 22px 26px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+        }
+        .social-links h4 {
+            color: #1b2a4a;
+            font-size: 13px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+        }
+        .social-links ul { list-style: none; padding: 0; }
+        .social-links ul li { margin-bottom: 12px; }
+        .social-links ul li a {
+            text-decoration: none;
+            color: #2c3e6b;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .social-links ul li a:hover { color: #4fc3f7; }
+        .social-links ul li span {
+            color: #8a9ab0;
+            font-size: 13px;
+            display: block;
+        }
+
+        .contact-form {
+            flex: 1.5;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 32px 38px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+            border-top: 4px solid #4fc3f7;
+        }
+        .contact-form h3 {
+            color: #1b2a4a;
+            font-size: 20px;
+            margin-bottom: 22px;
+            border-bottom: 1px solid #e8edf4;
+            padding-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            color: #4a5a6e;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1.5px solid #d0dae8;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #2d3748;
+            background-color: #f7fafc;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #4fc3f7;
+            background-color: white;
+        }
+        .form-group textarea { height: 125px; resize: vertical; }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #4fc3f7, #2c9fd4);
+            color: #1b2a4a;
+            padding: 13px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .submit-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        footer {
+            background: linear-gradient(135deg, #1b2a4a 0%, #2c3e6b 100%);
+            color: #8aa4c8;
+            text-align: center;
+            padding: 24px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Arham Jaffery</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="page-title">
+    <h2>Contact Me</h2>
+    <p>Get in touch &mdash; I&rsquo;m open to new opportunities and collaborations</p>
+</div>
+
+<div class="content">
+
+    <!-- Contact Info Column -->
+    <div class="contact-info">
+
+        <div class="info-card">
+            <h4>&#128231; Email</h4>
+            <a href="mailto:ajafri.business@gmail.com">ajafri.business@gmail.com</a>
+        </div>
+
+        <div class="info-card">
+            <h4>&#128222; Phone</h4>
+            <p>+92 332 3690918</p>
+            <p style="font-size:13px; color:#8a9ab0; margin-top:5px;">Available for calls &amp; WhatsApp</p>
+        </div>
+
+        <div class="info-card">
+            <h4>&#127759; Location</h4>
+            <p>Karachi, Sindh, Pakistan</p>
+            <p style="font-size:13px; color:#8a9ab0; margin-top:5px;">Working remotely with US &amp; Canadian clients</p>
+        </div>
+
+        <div class="social-links">
+            <h4>&#128279; Social Media</h4>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/arhamjaffery" target="_blank">&#128101; LinkedIn</a>
+                    <span>linkedin.com/in/arhamjaffery</span>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/arhamjaffery" target="_blank">&#128241; Facebook</a>
+                    <span>facebook.com/arhamjaffery</span>
+                </li>
+                <li>
+                    <a href="https://github.com/arhamjaffery" target="_blank">&#128187; GitHub</a>
+                    <span>github.com/arhamjaffery</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Contact Form Column -->
+    <div class="contact-form">
+        <h3>&#9993; Send Me a Message</h3>
+
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                    <option value="">-- Select a subject --</option>
+                    <option value="job">Job Opportunity</option>
+                    <option value="freelance">Freelance / Contract Work</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Syed Muhammad Arham Jaffery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

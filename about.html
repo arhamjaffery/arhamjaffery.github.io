@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Arham Jaffery</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f4f8; color: #2d3748; }
+
+        header {
+            background: linear-gradient(135deg, #1b2a4a 0%, #2c3e6b 100%);
+            color: white;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        header h1 { font-size: 22px; letter-spacing: 1.5px; font-weight: 700; }
+        nav a {
+            color: #c8d6f0;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #4fc3f7; }
+
+        .page-title {
+            background: linear-gradient(160deg, #1b2a4a 0%, #243460 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .page-title h2 { font-size: 34px; margin-bottom: 10px; font-weight: 700; }
+        .page-title p { color: #8aaac8; font-size: 15px; }
+
+        .content {
+            max-width: 900px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .section-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 32px 38px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+            border-top: 4px solid #4fc3f7;
+        }
+        .section-block h3 {
+            color: #1b2a4a;
+            font-size: 20px;
+            margin-bottom: 18px;
+            border-bottom: 1px solid #e8edf4;
+            padding-bottom: 10px;
+        }
+
+        table { width: 100%; border-collapse: collapse; }
+        table td { padding: 11px 10px; font-size: 15px; vertical-align: top; }
+        table td:first-child { font-weight: 700; color: #4a5a6e; width: 180px; }
+        table tr:nth-child(even) { background-color: #f7fafc; }
+
+        .edu-entry { margin-bottom: 20px; }
+        .edu-entry h4 { font-size: 16px; color: #1b2a4a; margin-bottom: 5px; font-weight: 700; }
+        .edu-entry p { font-size: 14px; color: #5a6a7e; }
+        .edu-entry span {
+            display: inline-block;
+            background-color: #4fc3f7;
+            color: #1b2a4a;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 12px;
+            border-radius: 12px;
+            margin-top: 6px;
+        }
+
+        .objective-text {
+            font-size: 15px;
+            line-height: 1.85;
+            color: #4a5a6e;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1b2a4a 0%, #2c3e6b 100%);
+            color: #8aa4c8;
+            text-align: center;
+            padding: 24px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Arham Jaffery</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="page-title">
+    <h2>About Me</h2>
+    <p>Personal Information &bull; Educational Background &bull; Career Objectives</p>
+</div>
+
+<div class="content">
+
+    <!-- Personal Information -->
+    <div class="section-block">
+        <h3>&#128100; Personal Information</h3>
+        <table>
+            <tr>
+                <td>Full Name</td>
+                <td>Syed Muhammad Arham Jaffery</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>Karachi, Sindh, Pakistan</td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td>English &amp; Urdu</td>
+            </tr>
+            <tr>
+                <td>Experience</td>
+                <td>5+ Years in Sales &amp; BPO</td>
+            </tr>
+            <tr>
+                <td>Industries</td>
+                <td>Logistics, Healthcare, Legal Intake, SaaS</td>
+            </tr>
+            <tr>
+                <td>Target Markets</td>
+                <td>United States &amp; Canada (Remote)</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>ajafri.business@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>+92 332 3690918</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Educational Background -->
+    <div class="section-block">
+        <h3>&#127891; Educational Background</h3>
+
+        <div class="edu-entry">
+            <h4>Bachelor of Science &mdash; Accounting &amp; Finance</h4>
+            <p>Khadim Ali Shah Bukhari Institute of Technology (KASBIT) &mdash; Karachi</p>
+            <span>In Progress &mdash; Expected 2029</span>
+        </div>
+
+        <div class="edu-entry">
+            <h4>Intuit QuickBooks ProAdvisor Certification</h4>
+            <p>Intuit Online &mdash; QuickBooks Product Knowledge &amp; Bookkeeping</p>
+            <span>Completed</span>
+        </div>
+
+        <div class="edu-entry">
+            <h4>Expository Writing (LIN 102)</h4>
+            <p>Academic coursework in structured writing and composition</p>
+            <span>Completed</span>
+        </div>
+
+        <div class="edu-entry">
+            <h4>Google Digital Garage</h4>
+            <p>Digital Marketing Fundamentals &mdash; Free Certification</p>
+            <span>Completed</span>
+        </div>
+    </div>
+
+    <!-- Career Objectives -->
+    <div class="section-block">
+        <h3>&#127919; Career Objectives</h3>
+        <p class="objective-text">
+            My goal is to combine my hands-on experience in outbound sales and business development with a
+            strong foundation in accounting and finance to grow into a versatile professional capable of
+            driving revenue and managing financial performance.
+        </p>
+        <br>
+        <p class="objective-text">
+            In the short term, I am seeking a remote role in B2B sales, lead generation, or appointment
+            setting where I can apply my proven cold calling expertise across US and Canadian markets.
+            Simultaneously, I am building towards launching my own remote freight dispatching business
+            targeting US carriers &mdash; leveraging my logistics BPO background.
+        </p>
+        <br>
+        <p class="objective-text">
+            Long term, I aim to obtain professional certifications in accounting (QuickBooks, bookkeeping)
+            and integrate financial acumen into my business ventures, positioning myself as both a skilled
+            salesperson and a financially literate entrepreneur.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Syed Muhammad Arham Jaffery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

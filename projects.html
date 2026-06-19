@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Arham Jaffery</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f4f8; color: #2d3748; }
+
+        header {
+            background: linear-gradient(135deg, #1b2a4a 0%, #2c3e6b 100%);
+            color: white;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        header h1 { font-size: 22px; letter-spacing: 1.5px; font-weight: 700; }
+        nav a {
+            color: #c8d6f0;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #4fc3f7; }
+
+        .page-title {
+            background: linear-gradient(160deg, #1b2a4a 0%, #243460 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .page-title h2 { font-size: 34px; margin-bottom: 10px; font-weight: 700; }
+        .page-title p { color: #8aaac8; font-size: 15px; }
+
+        .content {
+            max-width: 950px;
+            margin: 45px auto;
+            padding: 0 20px 50px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 32px 38px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+            border-top: 4px solid #4fc3f7;
+        }
+
+        .project-number {
+            display: inline-block;
+            background-color: #4fc3f7;
+            color: #1b2a4a;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 3px 14px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+        }
+
+        .project-card h3 {
+            font-size: 21px;
+            color: #1b2a4a;
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+
+        .project-card p {
+            font-size: 15px;
+            color: #4a5a6e;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .project-card h4 {
+            font-size: 13px;
+            color: #5a6a7e;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+        }
+        .tech-tags li {
+            background-color: #1b2a4a;
+            color: #c8d6f0;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1b2a4a 0%, #2c3e6b 100%);
+            color: #8aa4c8;
+            text-align: center;
+            padding: 24px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Arham Jaffery</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="page-title">
+    <h2>My Projects</h2>
+    <p>Academic &amp; Personal Projects &mdash; Real-World Problem Solving</p>
+</div>
+
+<div class="content">
+
+    <div class="project-card">
+        <span class="project-number">Project 01</span>
+        <h3>&#128222; Cold Calling Toolkit &amp; Lead Generation System</h3>
+        <p>
+            Designed and developed a complete outbound sales toolkit from scratch for targeting small and
+            medium businesses in Canada. The project involved building customized cold calling scripts
+            for VoIP services (eFone) and residential phone plans (Homephone), along with objection
+            handling guides, voicemail templates, and a structured follow-up workflow. Lead lists were
+            built using browser-based scraping tools to pull business data from YellowPages.ca and Kijiji.
+            The system reduced manual prospecting time significantly and improved call-to-lead conversion.
+        </p>
+        <h4>Technologies &amp; Tools Used:</h4>
+        <ul class="tech-tags">
+            <li>Instant Data Scraper</li>
+            <li>ExtensionsGod Yellow Pages Scraper</li>
+            <li>YellowPages.ca</li>
+            <li>Kijiji</li>
+            <li>Microsoft Excel (CRM Tracking)</li>
+            <li>VoIP Dialer</li>
+            <li>Google Docs (Script Writing)</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <span class="project-number">Project 02</span>
+        <h3>&#128666; Remote Freight Dispatching Business Plan</h3>
+        <p>
+            Researched, planned, and drafted a complete business model for launching a remote freight
+            dispatching service targeting owner-operators and small carriers in the United States. The
+            project covered regulatory requirements, dispatcher&ndash;carrier agreement templates, load board
+            usage strategies (DAT and 123Loadboard), pricing structures, and a carrier acquisition plan
+            using Facebook groups. The plan also included a startup cost analysis showing near-zero
+            overhead for a remote operation based in Pakistan.
+        </p>
+        <h4>Technologies &amp; Tools Used:</h4>
+        <ul class="tech-tags">
+            <li>DAT Load Board</li>
+            <li>123Loadboard</li>
+            <li>Facebook Groups (Carrier Outreach)</li>
+            <li>Microsoft Word (Documentation)</li>
+            <li>Microsoft Excel (Financial Planning)</li>
+            <li>Google Research</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <span class="project-number">Project 03</span>
+        <h3>&#128203; QuickBooks Bookkeeping Practice Project</h3>
+        <p>
+            As part of my Intuit QuickBooks ProAdvisor certification journey, I completed a hands-on
+            bookkeeping practice project simulating a small business environment. The project involved
+            setting up a company chart of accounts, recording income and expense transactions, reconciling
+            bank statements, generating Profit &amp; Loss and Balance Sheet reports, and managing accounts
+            payable and receivable.
+        </p>
+        <h4>Technologies &amp; Tools Used:</h4>
+        <ul class="tech-tags">
+            <li>QuickBooks Online</li>
+            <li>Intuit ProAdvisor Platform</li>
+            <li>Microsoft Excel (Reconciliation)</li>
+            <li>Google Sheets</li>
+            <li>Accounting Principles (GAAP Basics)</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <span class="project-number">Project 04</span>
+        <h3>&#127760; Personal Portfolio Website</h3>
+        <p>
+            Designed and developed this multi-page personal portfolio website using HTML as part of
+            an AICT course assignment. The website consists of five linked pages: Home, About, Skills,
+            Projects, and Contact. It presents personal information, educational background, career
+            objectives, technical and soft skills, project highlights, and a functional contact form.
+        </p>
+        <h4>Technologies &amp; Tools Used:</h4>
+        <ul class="tech-tags">
+            <li>HTML5</li>
+            <li>Inline CSS</li>
+            <li>HTML Forms</li>
+            <li>HTML Tables</li>
+            <li>Ordered &amp; Unordered Lists</li>
+            <li>Semantic HTML Elements</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Syed Muhammad Arham Jaffery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
